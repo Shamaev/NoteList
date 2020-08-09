@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.splash.SplashActivity"
+
+    android:padding="26dp"
+    android:background="@drawable/fon">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/marginTopLogo"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopWelcome"
+        android:text="@string/welcome"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textSizeWelcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopForma"
+        android:background="@drawable/shadow"
+        android:elevation="@dimen/paddingMargin"
+        android:gravity="center"
+        android:orientation="vertical"
+
+
+        android:outlineSpotShadowColor="@color/colorBlack"
+        android:padding="@dimen/paddingForma"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintVertical_bias="0.034">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginBottom"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="@dimen/paddingMargin"
+            android:drawableTint="@color/colorPrimary"
+
+            android:hint="@string/email"
+
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimary"
+
+            android:textColorHint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginBottom"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="@dimen/paddingMargin"
+            android:hint="@string/password"
+            android:drawableTint="@color/colorPrimary"
+
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimary"
+
+            android:textColorHint="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/sing"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginBottom"
+            android:background="@drawable/kryg"
+            android:text="@string/singIn"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/titleTextSize"
+            app:cornerRadius="@dimen/cardview_default_elevation" />
+
+        <TextView
+            android:id="@+id/registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

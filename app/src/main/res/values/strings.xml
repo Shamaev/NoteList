@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NoteList</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="singIn">Войти</string>
+    <string name="registration">Регистрация</string>
+    <string name="welcome">Вход в приложение</string>
+    <string name="loseSingIn">Не получилось войти</string>
+    <string name="completeSingIn">Вы вошли!</string>
+    <string name="completeRegistration">Регистрация прошла успешно!</string>
+    <string name="loseRegistration">Ну удалось зарегистрироваться!</string>
+</resources>
