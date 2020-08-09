@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingMargin">16dp</dimen>
+
+    <dimen name="titleTextSize">18dp</dimen>
+    <dimen name="textTextSize">16dp</dimen>
+
+    <dimen name="size8">8dp</dimen>
+    <dimen name="marginBottom">20dp</dimen>
+    <dimen name="marginTopWelcome">24dp</dimen>
+    <dimen name="marginTopLogo">68dp</dimen>
+    <dimen name="textSizeWelcome">26sp</dimen>
+    <dimen name="marginTopForma">24dp</dimen>
+    <dimen name="paddingForma">30dp</dimen>
+</resources>
